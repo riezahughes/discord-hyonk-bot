@@ -9,9 +9,9 @@ const imgur = require('imgur-node');
 const words = [
     ":swan: Honk Honk, Motherfucker.",
     ":swan: Honk!",
-    ":swan: Honk Hyonk!",
-    ":swan: *HYOOOONK!*",
-    ":swan: HONK HONK! *HYONKKKK!*"
+    ":swan: Honk Hjönk!",
+    ":swan: *HJÖNK!*",
+    ":swan: HONK HONK! *HJÖNKKKKKKKKK!*"
 ]
 
 client.on('ready', () => {
@@ -43,7 +43,6 @@ client.on('message', msg => {
 
         return msg.channel.send(`<@${msg.author.id}>`, {embed});
     });
-    msg.reply("HYONK");
 }    
 
 //   numberChoice = Math.floor(Math.random() * pictures);
