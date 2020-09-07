@@ -24,6 +24,9 @@ client.on('message', msg => {
     if(msg.author.bot){
         return;
     }
+    message = msg.content.toLowerCase();
+
+    if (message.includes("honk") || message.includes("hyonk")) {
 
     imgur.album.get(process.env.IMGUR_KEY, '9JJiJWe', (err, res) => {
 
@@ -40,6 +43,8 @@ client.on('message', msg => {
 
         return msg.channel.send(`<@${msg.author.id}>`, {embed});
     });
+    msg.reply("HYONK");
+}    
 
 //   numberChoice = Math.floor(Math.random() * pictures);
 
